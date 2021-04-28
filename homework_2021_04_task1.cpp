@@ -20,7 +20,7 @@ int main() //entry pontt for the program
         cin >> finale; //read from standard input into finale
     }
     srand(time(0)); //seed random number generator
-    int num = rand() % (finale - start) + start; // random number within the interval [start; finale]
+    int num = rand() % (finale - start + 1) + start; // random number within the interval [start; finale]
     int guess = 0; //declare variable guess and assign value of 0
     int gcount = 0; //declare a new variable, assign initial value
     while (guess != num) { //start while cycle with condition
